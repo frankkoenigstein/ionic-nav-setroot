@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Login
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item no-padding>
+        <ion-label floating>
+            <ion-icon name="contact"></ion-icon>
+            Name
+        </ion-label>
+        <ion-input [(ngModel)]="loginService.name" type="text" name="name">
+        </ion-input>
+    </ion-item>
+</ion-content>
+
+<ion-footer>
+    <button ion-button (click)="login()">login</button>
+</ion-footer>
